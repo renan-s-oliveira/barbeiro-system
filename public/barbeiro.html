@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha agenda · Barbeiro</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="mobile-top"><button class="menu-btn" id="menuBtn" aria-label="Menu" style="display:block">☰</button><span class="logo">MINHA <span>AGENDA</span></span></div>
+<div class="app">
+  <aside class="side" id="side">
+    <a class="logo" href="/">✂ <span>BARBEIRO</span></a>
+    <nav aria-label="Painel do barbeiro" id="tabs">
+      <button class="tab on" data-v="agenda">📅 Minha agenda</button>
+      <button class="tab" data-v="reviews">⭐ Minhas avaliações</button>
+      <button class="tab" data-v="profile">👤 Perfil e senha</button>
+      <button class="tab" id="logout">🚪 Sair</button>
+    </nav>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<script src="/common.js"></script>
+<script src="/barbeiro.js"></script>
+</body>
+</html>

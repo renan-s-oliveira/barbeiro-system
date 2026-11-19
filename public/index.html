@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barbearia Navalha de Ouro</title>
+<meta name="description" content="Agende seu corte e barba online, assine planos mensais e ganhe pontos de fidelidade.">
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<header class="nav"><div class="container">
+  <a class="logo" href="#">NAVALHA <span>DE OURO</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks" aria-label="Principal">
+    <a href="#servicos">Serviços</a><a href="#planos">Planos</a><a href="#equipe">Equipe</a>
+    <a href="#loja">Loja</a><a href="#comodidades">Comodidades</a><a href="#fidelidade">Fidelidade</a>
+    <span id="authArea"></span>
+  </nav>
+</div></header>
+
+<main>
+<section class="hero"><div class="container">
+  <div class="eyebrow">Tradição • Estilo • Precisão</div>
+  <h1>O corte certo.<br>A barba <span class="gold">impecável</span>.</h1>
+  <p>Agende online em segundos, escolha seu barbeiro e assine um plano mensal para cortar e fazer a barba sempre com preço fixo.</p>
+  <div class="cta"><button class="btn" id="heroBook">Agendar horário</button><a class="btn ghost" href="#planos">Ver planos</a></div>
+  <div class="stats" id="heroStats"></div>
+</div></section>
+
+<section id="servicos"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Nossos serviços</div><h2>Cuidado completo para o seu visual</h2><p>Atendimento com hora marcada, sem fila.</p></div>
+  <div class="grid g4" id="services"></div>
+</div></section>
+
+<section id="planos" class="alt"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Planos mensais</div><h2>Assine e economize</h2><p>Cortes e barbas incluídos todo mês, com pagamento por Pix ou cartão.</p></div>
+  <div class="grid g4" id="plans"></div>
+</div></section>
+
+<section id="equipe"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Equipe</div><h2>Mestres da navalha</h2><p>Escolha o profissional e veja as avaliações dos clientes.</p></div>
+  <div class="grid g3" id="barbers"></div>
+</div></section>
+
+<section id="loja" class="alt"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Loja</div><h2>Produtos para levar para casa</h2><p>Reserve online e retire (e pague) na barbearia.</p></div>
+  <div class="grid g4" id="products"></div>
+  <div style="text-align:center;margin-top:28px"><button class="btn" id="cartBtn">Ver carrinho (<span id="cartCount">0</span>)</button></div>
+</div></section>
+
+<section id="comodidades"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Comodidades</div><h2>Conforto enquanto você espera</h2></div>
+  <div class="grid g4" id="amenities"></div>
+</div></section>
+
+<section id="fidelidade" class="alt"><div class="container">
+  <div class="sec-head"><div class="eyebrow">Programa de fidelidade</div><h2>Cada visita vale pontos</h2><p>Ganhe pontos a cada atendimento e ao avaliar. Troque por recompensas.</p></div>
+  <div class="grid g3" id="rewards"></div>
+  <div class="sec-head" style="margin:56px 0 24px"><h2>O que dizem nossos clientes</h2></div>
+  <div class="grid g3" id="reviews"></div>
+</div></section>
+</main>
+
+<footer><div class="container" id="footer"></div></footer>
+
+<!-- Modal genérico -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+  <div class="box"><button class="x" id="mClose" aria-label="Fechar">×</button><div id="mBody"></div></div>
+</div>
+
+<script src="/common.js"></script>
+<script src="/site.js"></script>
+</body>
+</html>

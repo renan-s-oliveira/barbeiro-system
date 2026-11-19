@@ -1,0 +1,10 @@
+{
+  "name": "barbearia-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema web de barbearia: agendamento, painel admin, painel do cliente e planos",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=22.13" },
+  "dependencies": { "express": "^4.21.2" }
+}

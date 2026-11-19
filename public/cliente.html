@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minha conta · Barbearia</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="mobile-top"><button class="menu-btn" id="menuBtn" aria-label="Menu" style="display:block">☰</button><span class="logo">MINHA <span>CONTA</span></span></div>
+<div class="app">
+  <aside class="side" id="side">
+    <a class="logo" href="/">✂ <span>BARBEARIA</span></a>
+    <nav aria-label="Painel do cliente" id="tabs">
+      <button class="tab on" data-v="home">🏠 Resumo</button>
+      <button class="tab" data-v="appts">📅 Agendamentos</button>
+      <button class="tab" data-v="plan">💎 Meu plano</button>
+      <button class="tab" data-v="loyalty">⭐ Fidelidade</button>
+      <button class="tab" data-v="orders">🛍 Pedidos</button>
+      <button class="tab" data-v="profile">👤 Perfil</button>
+      <a class="tab" href="/#loja">🧴 Loja</a>
+      <button class="tab" id="logout">🚪 Sair</button>
+    </nav>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="box"><button class="x" id="mClose" aria-label="Fechar">×</button><div id="mBody"></div></div></div>
+<script src="/common.js"></script>
+<script src="/cliente.js"></script>
+</body>
+</html>
